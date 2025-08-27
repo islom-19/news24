@@ -1,0 +1,124 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo uslubi */
+.logo {
+    font-weight: 600;
+    font-size: 28px;
+    color: #343a40;
+    margin: 0;
+}
+
+/* Search tugmasi */
+.search-btn {
+    font-size: 16px;
+}
+
+/* Navbar tugmalari */
+.navbar .navbar-brand {
+    margin-right: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+    background-color: #e2e6ea;
+    color: #000;
+}
+
+/* Yangiliklar kartalari */
+.news-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Rasmlar */
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Sarlavhalar */
+.news-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #222;
+}
+
+/* Paragraflar */
+.news-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Media queries — responsivlik uchun */
+
+/* Tabletlar uchun */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .search-btn {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .navbar .navbar-brand {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .news-item h3 {
+        font-size: 16px;
+    }
+
+    .news-item p {
+        font-size: 13px;
+    }
+}
+
+/* Mobil telefonlar uchun */
+@media (max-width: 576px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-btn {
+        margin-top: 10px;
+    }
+}
